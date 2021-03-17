@@ -20,9 +20,9 @@ As a user, you will be able to add expenses and deposits to your budget with or 
 
 [Github Repository](https://github.com/rpc08002/Budget-Tracker)
 
-[Live URL]()
+[Live URL](https://add-m0re-money.herokuapp.com/)
 
-![Website GIF]()
+![Website GIF](public/budgettracker.gif)
 
 ## License
 

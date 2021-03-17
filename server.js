@@ -7,6 +7,8 @@ const PORT = 3000;
 
 const app = express();
 
+const databaseName = "Transaction"
+
 app.use(logger("dev"));
 
 app.use(compression());
