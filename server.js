@@ -5,6 +5,8 @@ const compression = require("compression");
 
 const PORT = 3000;
 
+const db = require("./models");
+
 const app = express();
 
 const databaseName = "Transaction"
