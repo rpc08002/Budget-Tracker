@@ -15,10 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://Ryan:A7CJOasrcNVnNsqv@budgettracker.vcx83.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log(`Successfully connected to database: ${databaseName}`))
 
 // routes
 app.use(require("./routes/api.js"));
